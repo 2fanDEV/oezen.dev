@@ -53,28 +53,28 @@ export default {
         </v-sheet>
       </v-tab-item>
       <v-tab-item value="aboutme">
-        <v-sheet height="1380" width="60vw" color="#000000">
+        <v-sheet height="1380" width="100vw" color="#000000">
           <div class="greeting">
             <h1 class="texthome">aboutme</h1>
           </div>
         </v-sheet>
       </v-tab-item>
       <v-tab-item value="sav">
-        <v-sheet height="1380" width="60vw" color="#000000">
+        <v-sheet height="1380" width="100vw" color="#000000">
           <div class="greeting">
             <h1 class="texthome">sav</h1>
           </div>
         </v-sheet>
       </v-tab-item>
       <v-tab-item value="photography">
-        <v-sheet height="1380" width="60vw" color="#000000">
+        <v-sheet height="1380" width="100vw" color="#000000">
           <div class="greeting">
             <h1 class="texthome">photography</h1>
           </div>
         </v-sheet>
       </v-tab-item>
       <v-tab-item value="droptimer">
-        <v-sheet height="1280" width="1280" color="#000000">
+        <v-sheet height="1280" width="100vw" color="#000000">
           <div class="greeting">
             <h1 class="texthome">droptimer</h1>
           </div>
