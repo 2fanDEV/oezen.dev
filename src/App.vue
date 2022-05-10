@@ -46,7 +46,7 @@ export default {
       v-model="tab"
     >
       <v-tab-item value="home" style="align-items:center;">
-        <v-sheet height="1380" width="69vw" color="#000000" style="align-self:center">
+        <v-sheet height="1380" width="100vw" color="#000000" style="align-self:center">
           <div class="greeting">
             <h1 class="texthome">home</h1>
           </div>
