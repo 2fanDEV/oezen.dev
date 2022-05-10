@@ -74,7 +74,7 @@ export default {
         </v-sheet>
       </v-tab-item>
       <v-tab-item value="droptimer">
-        <v-sheet height="1280" width="100vw" color="#000000">
+        <v-sheet height="1380" width="100vw" color="#000000">
           <div class="greeting">
             <h1 class="texthome">droptimer</h1>
           </div>
