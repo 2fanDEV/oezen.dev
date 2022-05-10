@@ -1,6 +1,6 @@
 <template>
   <div class="about">
-    <h1>BigTest
+    <h1>BigTest for Jenkins
     </h1>
   </div>
 </template>
