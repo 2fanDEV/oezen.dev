@@ -1,6 +1,6 @@
 <template>
   <div class="about">
-    <h1>Test45454
+    <h1>BigTest
     </h1>
   </div>
 </template>
