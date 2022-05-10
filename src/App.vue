@@ -1,38 +1,84 @@
-<script setup lang="ts">
-import { RouterLink, RouterView } from "vue-router";
 
+
+<script>
+
+export default {
+  name: 'App',
+
+  components: {
+  },
+
+  data: () => ({
+    //
+  }),
+};
 </script>
 
 <template>
-<header>
-  <div>
-    Home
-  </div>
-</header>
-  <header>
-    <div>
+  <v-app style="background-color: #BEAFC2">
+    <v-app-bar
+    style="resize: none !important; justify-content: center; display:flex;"
+      app
+      dense
+      outlined
+      elevate-on-scroll
+      color="#484C7F"
+      elevation="5"
+      dark
+    >
+    
+ 
+    <v-tabs>
+      <v-tab> HOME </v-tab>
+      <v-tab> ABOUT ME </v-tab>
+      <v-tab> SAV </v-tab>
+      <v-tab> PHOTOGRAPHY </v-tab>
+    </v-tabs>
+     </v-app-bar>
+    <v-sheet
+      style="align-self: center; align-items: center;"
+      height="1480"
+      width="1280"
+      color="#BEAFC2">
+    <div class="greeting">
+       <h1 class= "texthome">
+          Hi an alle.
+      </h1>
+       <h1 class= "texthome">
+        Ich hasse euch und mich alle gleich viel.
+        </h1>
+         <h1 class= "texthome">
+           Work in Progress
+        </h1>
+         <h1 class= "texthome">
+          Schau noch einmal in einer Woche.
+        </h1>
     </div>
-    <div>
-      About
-    </div>
-  </header>
-  <header>
-    <div>
-      Works
-    </div>
-  </header>
+    </v-sheet>
+    </v-app>
+
 </template>
 
 
 <style>
-@import "@/assets/base.css";
 
-#app {
-  max-width: 1920px;
-  margin: 0 auto;
-  padding: 2rem;
-
-  font-weight: normal;
+.texthome {
+  margin-top: 0.2%;
+  position: relative;
+  color: #484C7F;
 }
 
+.greeting {
+  display: flex;
+  margin-top: 25%;
+  flex-direction: column;
+  align-items: center;
+}
+
+.flexgrid {
+  display:flex;
+  flex-direction: row;
+  flex-flow: row;
+  margin-left: 50vw;
+}
 </style>
