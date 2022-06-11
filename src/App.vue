@@ -1,7 +1,9 @@
 <script>
+import AboutMe from './components/aboutme/AboutMe.vue';
+
 export default {
   name: "App",
-  components: {},
+  components: {AboutMe},
 
   data: () => ({
     tab: null,
@@ -55,7 +57,7 @@ export default {
       <v-tab-item value="aboutme">
         <v-sheet height="1380" width="100vw" color="#000000">
           <div class="greeting">
-            <h1 class="texthome">aboutme</h1>
+            <about-me></about-me>
           </div>
         </v-sheet>
       </v-tab-item>
@@ -97,5 +99,7 @@ export default {
   align-items: center;
   font-size: 50px;
 }
+
+
 
 </style>

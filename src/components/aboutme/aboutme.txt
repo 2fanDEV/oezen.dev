@@ -1,0 +1,9 @@
+Hi, my name is Tufan!
+
+I'm a computer science student at the 
+technical university of hamburg, germany and 
+I am currently writing my bachelors thesis
+
+On the side I am working at adesso SE based
+in germany as a Software Developer and 
+trying to improve my coding skills.
