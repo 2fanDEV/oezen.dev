@@ -1,6 +1,4 @@
-
 <script>
-
 import CardTemplate from "../misc/CardTemplate.vue";
 
 export default {
@@ -9,26 +7,36 @@ export default {
   methods: {},
   data: () => ({
     tab: 1,
-    minio: process.env.VUE_APP_MINIO_IP,
+    backend: process.env.VUE_APP_BACKEND_IP,
+    minio: process.env.VUE_APP_BACKEND_MINIO_API
   }),
 };
 </script>
 
 <template>
-  <div>
+  <div class="flexbox">
     <div class="aboutme">
       <card-template
         :title="'About Me'"
         :passClass="'introduction'"
-        :texts="minio + '/texts/aboutme.txt'"
+        :texts=" backend + minio + '/textfile/texts/file/aboutme.txt'"
       ></card-template>
+    </div>
+    <div>
+      <card-template class="university"
+        :title="'University'"
+        :passClass="'university'"
+        :texts="minio + '/textfile/texts/file/university.txt'"></card-template>
     </div>
   </div>
 </template>
 
 <style>
-.aboutme {
-  margin-top: 5em;
-  margin-right: 25em;
+.flexbox {
+  display: flex;
+  margin-top: 10%;
+  gap: 5%;
 }
+
+
 </style>

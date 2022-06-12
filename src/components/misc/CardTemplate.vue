@@ -25,10 +25,6 @@ export default {
         }
       );
     },
-    formatText(text) {
-      text.replace("Tufan", "/n")
-      return text;
-    }
   },
 
   beforeMount() {
@@ -54,6 +50,19 @@ export default {
 </template>
 
 <style>
+
+.university {
+  white-space: pre !important;
+  font-size: 0.5em;
+  width: 15em;
+  opacity: 0%;
+  animation-timing-function: fadeIn 1s ease-in-out 2s;
+  animation-name: university;
+  animation-fill-mode: forwards;
+  animation-duration: 1.5s;
+  animation-delay: 1.5s;
+}
+
 .introduction {
   white-space: pre !important;
   font-size: 0.5em;
@@ -62,8 +71,8 @@ export default {
   animation-timing-function: fadeIn 1s ease-in-out 2s;
   animation-name: introduction;
   animation-fill-mode: forwards;
-  animation-duration: 3s;
-  animation-delay: 1s;
+  animation-duration: 1.5s;
+  animation-delay: 0.5s;
 }
 
 @keyframes introduction {
@@ -75,6 +84,19 @@ export default {
   to {
     opacity: 100%;
     height: 11.5em;
+    margin-top: 3%;
+  }
+}
+
+@keyframes university {
+  from {
+    opacity: 0%;
+    height: 0em;
+    margin-top: -2%;
+  }
+  to {
+    opacity: 100%;
+    height: 17em;
     margin-top: 3%;
   }
 }
